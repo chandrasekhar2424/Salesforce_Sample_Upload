@@ -1,0 +1,8 @@
+<apex:page standardController="Account" >
+Account Name:{!Account.Name}<br/>
+ Created by:   {!Account.CreatedBy}<br/>
+ Rating:{!Account.Rating}<br/>
+ Type:{!Account.Type}<br/>
+ Owner:{!Account.OwnerId}<br/>
+ Parent:{!Account.ParentId}
+</apex:page>

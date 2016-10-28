@@ -1,0 +1,19 @@
+<!-- Sample mutiple form when clicking on plus button -->
+<apex:page controller="xyz"  >
+    <apex:form >
+        <apex:pageBlock title="Add New Customer">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable columns="3" value="{!acc}" var="aa" >
+                <apex:column >Account Name <apex:inputField value="{!aa.Name}"/> </apex:column>
+                <apex:column > Account Number  <apex:inputField value="{!aa.AccountNumber}"/> </apex:column>
+                <apex:column >Type  <apex:inputField value="{!aa.Type}"/> </apex:column>
+                <apex:column ><apex:commandButton value="+" action="{!addRow}"/></apex:column>
+            </apex:pageBlockTable>
+            <apex:facet name="header">           
+                <apex:commandButton value="+" action="{!addRow}"/>
+            </apex:facet>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page StandardController="Account" extensions="MyCustomControllerExtension">
+    <apex:form >
+        <apex:outputLabel >Account Name</apex:outputLabel>
+        <apex:inputField value="{!acc.Name}"/><br/>
+        <apex:outputLabel >Account Type</apex:outputLabel>
+        <apex:inputField value="{!acc.Type}"/><br/>
+        <apex:commandButton value="Save" action="{!submit}"/>        
+    </apex:form>
+ </apex:page>

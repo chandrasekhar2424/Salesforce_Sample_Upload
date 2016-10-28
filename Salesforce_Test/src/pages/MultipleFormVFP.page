@@ -1,0 +1,12 @@
+<apex:page standardController="Account" extensions="MultipleFormController">
+    <apex:form >
+        <apex:outputLabel >AccountName</apex:outputLabel><apex:inputField value="{!acc.Name}"/>
+        <apex:outputLabel >Account Number</apex:outputLabel><apex:inputField value="{!acc.AccountNumber}"/>
+        <apex:outputLabel >Type</apex:outputLabel><apex:inputField value="{!acc.Type}"/>
+        <apex:commandButton value="+" action="{!add}"/>
+        <apex:commandButton value="-" action="{!Remove}"/>
+       
+        
+    </apex:form>
+  
+</apex:page>

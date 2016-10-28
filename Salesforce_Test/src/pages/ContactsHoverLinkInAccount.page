@@ -1,0 +1,32 @@
+<apex:page standardController="Account">
+<apex:form >
+   <apex:pageBlock >
+         <apex:pageBlockTable value="{!Account.Contacts}" var="con">
+              <apex:column value="{!con.Name}"/>
+              <apex:column value="{!con.Title}"/>
+              <apex:column value="{!con.Email}"/>
+              <apex:column value="{!con.Phone}"/>
+          </apex:pageBlockTable> 
+          <apex:pageBlockButtons location="bottom">
+              <apex:commandButton value="New Contact"/>
+          </apex:pageBlockButtons> 
+    </apex:pageBlock>
+    
+    <apex:dataTable value="{!Account.Contacts}" var="con" border="2" cellpadding="3">
+    
+              <apex:column value="{!con.Name}">
+                  <apex:facet name="Header">Name</apex:facet>
+              </apex:column>
+              <apex:column value="{!con.Title}">
+                  <apex:facet name="Header">Title</apex:facet>
+              </apex:column>
+              <apex:column value="{!con.Email}">
+                  <apex:facet name="Header">Email</apex:facet>
+              </apex:column>
+              
+              <apex:column value="{!con.Phone}">
+                  <apex:facet name="Header">Phone</apex:facet>
+              </apex:column>
+          </apex:dataTable> 
+    </apex:form>
+</apex:page>
