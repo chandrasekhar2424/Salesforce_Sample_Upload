@@ -8,6 +8,9 @@ public class AddClass {
     }
     //sample git upload
     //gfgf
+    ///
+    /////
+    ////
     public  void sample(Integer i) {
         System.debug('*****'+i);
     }
